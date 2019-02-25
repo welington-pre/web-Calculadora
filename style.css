@@ -1,0 +1,36 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+html{
+    background-image: linear-gradient(to right, #e91e63 , #3f51b5);
+    height: 100%;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #607d8b;
+    border: none;
+    color: white;
+}
+
+.textview{
+    width: 206px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    color: #607d8b;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

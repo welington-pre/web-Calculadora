@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javaScript" src="code.js"></script>
+
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <form name="form">
+                <input class="textview" name="textview" disabled>
+        </form>
+        <table>
+            <tr>
+                <td><input class="button" type="button" value="C" onclick="apagar()"></td>
+                <td><input class="button" type="button" value="<" onclick="del()"></td>
+                <td><input class="button" type="button" value="/" onclick="exibirNumero('/')"></td>
+                <td><input class="button" type="button" value="X" onclick="exibirNumero('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="exibirNumero(7)"></td>
+                <td><input class="button" type="button" value="8" onclick="exibirNumero(8)"></td>
+                <td><input class="button" type="button" value="9" onclick="exibirNumero(9)"></td>
+                <td><input class="button" type="button" value="-" onclick="exibirNumero('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="exibirNumero(4)"></td>
+                <td><input class="button" type="button" value="5" onclick="exibirNumero(5)"></td>
+                <td><input class="button" type="button" value="6" onclick="exibirNumero(6)"></td>
+                <td><input class="button" type="button" value="+" onclick="exibirNumero('+')"></td>
+            </tr>
+
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="exibirNumero(1)"></td>
+                <td><input class="button" type="button" value="2" onclick="exibirNumero(2)"></td>
+                <td><input class="button" type="button" value="3" onclick="exibirNumero(3)"></td>
+                <td rowspan="5"><input style="height: 106px;" class="button" type="button" value="=" onclick="igual()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="width: 106px;" class="button" type="button" value="0" onclick="exibirNumero(0)"></td>
+                <td><input class="button" type="button" value="." onclick="exibirNumero('.')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
